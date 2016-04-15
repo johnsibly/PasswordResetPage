@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NOW TV Password Reset</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_password1">Enter your new password</string>
+    <string name="prompt_password2">Re-enter your new password</string>
+    <string name="action_set_password">Set password</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This passwords entered are invalid</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+</resources>
