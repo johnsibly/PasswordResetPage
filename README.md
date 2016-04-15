@@ -14,4 +14,4 @@ Acceptance criteria:
 	• Passwords must be at least 8 characters in length
 	• Password must not be greater than 20 characters in length
 	• Password must contain both upper case and lower case characters
-Passwords must contain at least one numeric character
+	• Passwords must contain at least one numeric character
