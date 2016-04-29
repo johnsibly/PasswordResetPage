@@ -94,7 +94,7 @@ public class NewPasswordActivity extends AppCompatActivity {
     }
 
     private boolean isPasswordValid(String password1, String password2) {
-        return (new PasswordComplexityValidator().Validate(password1, password2));
+        return (new PasswordComplexityValidator(null).Validate(password1, password2));
     }
 
 }
