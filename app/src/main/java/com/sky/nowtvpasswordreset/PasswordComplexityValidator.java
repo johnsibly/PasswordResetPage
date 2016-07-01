@@ -11,6 +11,6 @@ public class PasswordComplexityValidator {
 
     public boolean Validate(String password1, String password2)
     {
-        return true;
+        return password1.equals(password2);
     }
 }

@@ -44,6 +44,7 @@ public class NewPasswordActivity extends AppCompatActivity {
     // UI references.
     private EditText mPassword1View;
     private EditText mPassword2View;
+    private TextView mSetPasswordResult;
     private View mLoginFormView;
 
     @Override
@@ -53,6 +54,7 @@ public class NewPasswordActivity extends AppCompatActivity {
         // Set up the login form.
         mPassword1View = (EditText) findViewById(R.id.password1);
         mPassword2View = (EditText) findViewById(R.id.password2);
+        mSetPasswordResult = (TextView) findViewById(R.id.set_password_result);
 
         Button mSetPasswordButton = (Button) findViewById(R.id.set_password_button);
         mSetPasswordButton .setOnClickListener(new OnClickListener() {
@@ -86,7 +88,10 @@ public class NewPasswordActivity extends AppCompatActivity {
         if (!isPasswordValid(password1, password2)) {
             mPassword2View.setError(getString(R.string.error_invalid_password));
             focusView = mPassword2View;
-            cancel = true;
+
+            mSetPasswordResult.setText(R.string.error_invalid_password);
+
+            // cancel = true;
         }
         else {
             Toast.makeText(getApplicationContext(), "Your password was successfully set", Toast.LENGTH_LONG).show();
