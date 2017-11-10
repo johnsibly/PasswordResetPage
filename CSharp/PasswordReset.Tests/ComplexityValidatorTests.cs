@@ -12,7 +12,7 @@ namespace PasswordReset.Tests
         {
             PasswordComplexityValidator validator = new PasswordComplexityValidator();
 
-            Assert.False(validator.Validate("ThisIsMyPassword", "ThisPassWordIsDifferent"));
+            Assert.False(validator.Validate("ThisIsMyPassword", "ThisPasswordIsDifferent"));
         }
 
         [Test()]
@@ -21,12 +21,6 @@ namespace PasswordReset.Tests
             PasswordComplexityValidator validator = new PasswordComplexityValidator();
 
             Assert.True(validator.Validate("ThisIsMyPassword", "ThisIsMyPassword"));
-        }
-
-        public void MockTest()
-        {
-            var mockPasswordReUseChecker = Mock.Interface<IPasswordReUseChecker>();
-
         }
     }
 }
